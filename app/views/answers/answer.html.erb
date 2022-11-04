@@ -1,0 +1,26 @@
+<div class="my-5 d-flex justify-content-center">
+  <div class="my-5 d-flex bg-light flex-column justify-content-center rounded">
+    <div class="p-6 m-3 bg-success text-dark bg-opacity-10 shadow rounded">
+      <figure class="mx-3">
+        <blockquote class="blockquote">
+          <p> <%= @question %> </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <p>-You</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="p-6 m-3 bg-warning text-dark bg-opacity-10 text-dark shadow rounded">
+      <figure class="mx-3">
+        <blockquote class="blockquote">
+          <p> <%= @answer %> </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <p>-Your coach</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <%= link_to 'Ask a new question', home_path, class:"m-3 text-center" %>
+  </div>
+</div>
